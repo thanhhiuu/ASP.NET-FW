@@ -1,0 +1,39 @@
+﻿@page
+@model MyStore.Pages.Clients.IndexModel
+@{
+}
+<h2>New page store</h2>
+<button type="button" class="btn-danger">New Create</button>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>MaHoa</th>
+            <th>TenHoa</th>
+            <th>Gia</th>
+            <th>MaLoai</th>
+            <th>NgayDang</th>
+            <th>SoLuotXem</th>
+            <th>Acction</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model.ds)
+        {
+            <tr>
+                <td>@item.maHoa</td>
+                <td>@item.tenHoa</td>
+                <td>@item.gia</td>
+                <td>@item.maLoai</td>
+                <td>@item.ngayDang</td>
+                <td>@item.soLuotXem</td>
+                <td>
+                    <a class="btn-primary btn btn-sm" href="/Cleints/Edit?id=@item.maHoa">Edit</a>
+                    <a class="btn-danger btn btn-sm" href="/Cleints/Delete?id=@item.maHoa">Delete</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

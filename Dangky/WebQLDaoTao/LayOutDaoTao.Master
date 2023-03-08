@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LayOutDaoTao.master.cs" Inherits="WebQLDaoTao.LayOutDaoTao" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .content-sub {
+            display: flex;
+            margin-top: 30px;
+            width: 100%;
+            height: 100vh;
+        }
+        .content-sub-left {
+            flex-basis: 15%;
+            background-color: #dddddd;
+        }
+        .content-sub-left ul li {
+             list-style: none; 
+             border-bottom: 1px solid #000; 
+             padding: 10px 0px;
+             margin-left:0px;
+        }
+        .content-sub-left ul li a{
+            color: #000;
+            font-size: 18px;
+            text-decoration: none;
+            
+        }
+        .content-sub-left ul li a:hover {
+           color:aqua;
+        }
+        .content-sub-right {
+            flex-basis: 85%;
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="post" runat="server">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">QLDaoTao</a>            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="MonHoc.aspx">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Danh mục</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Quản Lý Điểm Thi</a>
+            </li>
+        </ul>
+
+  <div class="content-sub">
+    <div class="content-sub-left">
+        <h4 style="background-color:cadetblue;">Chức Năng Chính</h4>
+        <ul>
+            <li><a href="#">Quản Lý Môn Học</a></li>
+            <li><a href="#">Quản Lý Khoa</a></li>
+            <li><a href="#">Quản Lý Sinh Viên</a></li>
+            <li><a href="#">Quản Lý Điểm</a></li>
+        </ul>
+    </div>
+    <div class="content-sub-right container">
+        <asp:ContentPlaceHolder runat="server" ID="NoiDung">
+        </asp:ContentPlaceHolder>
+    </div>
+  </div>
+    </form>
+
+
+    
+    <!-- Link tới các tệp JavaScript của Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

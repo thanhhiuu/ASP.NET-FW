@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LayOut.Master.cs" Inherits="QLDaoTao.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server"> 
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 1024px;
+        }
+        .auto-style2 {
+            height: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table align="center" class="auto-style1">
+                <tr>
+                    <td class="auto-style2" colspan="2" style="height: 100px; text-align: center; background-color: #0094ff;">HEADER</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="height: 50px; text-align: center; background-color: #4cff00;">MENU</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0px 10px; width: 30%; height: 300px; background-color: #0df168; vertical-align: top;">&nbsp;</td>
+                    <td style="padding: 0px 10px; width: 70%; height: 300px; background-color: #e61ee7; vertical-align: top;">&nbsp;
+
+                        <asp:ContentPlaceHolder ID="NoiDung" runat="server"></asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="height: 100px; text-align: center; background-color: #f76f0f;">FOOTER&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

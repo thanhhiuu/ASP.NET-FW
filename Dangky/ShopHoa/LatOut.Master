@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LatOut.master.cs" Inherits="ShopHoa.LatOut" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <style>
+        .navbar-collapse ul li:hover {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Shop Hoa</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarScroll">
+                            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="XemHoa.aspx">Xem Hoa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ThemHoa.aspx">Thêm Hoa</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="TraCuu.aspx">Tra Cứu</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <button style="margin: 0px 10px;" class="btn btn-outline-success" type="submit">Login</button>
+                                <button class="btn btn-outline-success" type="submit">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <%-- Footer --%>
+        <div class="card-footer text-muted text-bg-secondary p-3 text-center" style="width: 100%; margin-top: 50px;">
+            Không có hàng đâu mà mua
+        </div>
+    </form>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

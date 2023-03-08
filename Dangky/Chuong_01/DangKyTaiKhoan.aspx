@@ -18,6 +18,14 @@
             text-align:center;
             color: blue;
         }
+        .auto-style5 {
+            width: 287px;
+            text-align: right;
+            height: 33px;
+        }
+        .auto-style6 {
+            height: 33px;
+        }
     </style>
 </head>
 <body>
@@ -28,8 +36,8 @@
                     <td class="auto-style4" colspan="2">ĐĂNG KÝ TÀI KHOẢN SINH VIÊN&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">Tên Đăng Nhập</td>
-                    <td>
+                    <td class="auto-style5">Tên Đăng Nhập</td>
+                    <td class="auto-style6">
                         <asp:TextBox ID="txttendangnhap" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txttendangnhap" ErrorMessage="RequiredFieldValidator" ForeColor="#FF3300">(*)</asp:RequiredFieldValidator>
                         <asp:CompareValidator ID="CompareValidator3" runat="server" ControlToValidate="txttendangnhap" ErrorMessage="Phải là chữ" Operator="DataTypeCheck" ForeColor="Red">(*)</asp:CompareValidator>

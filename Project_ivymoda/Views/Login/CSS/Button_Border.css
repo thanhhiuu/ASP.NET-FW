@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100%;
+}
+.btn_border {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        background-color: #2f2f2f;
+}
+.btn_border a {
+    padding: 20px 60px;
+    background-color: #000;
+    border: 6px solid transparent;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #0ea7ea;
+    font-weight: bold;
+    box-shadow: 0 0 15px #383838, 0 0 35px #000;
+    border-image: linear-gradient(15deg, #0ea7ea, #ff6347);
+    border-image-slice: 1 ;
+}
