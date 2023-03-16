@@ -39,7 +39,7 @@
     </style>
 </head>
 <body>
-    <form action="/" method="post" runat="server">
+    <form runat="server">
         <ul class="nav nav-tabs">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">QLDaoTao</a>            </li>

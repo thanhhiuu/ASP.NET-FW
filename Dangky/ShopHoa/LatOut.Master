@@ -14,7 +14,7 @@
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form runat="server">
 
         <div class="collapse" id="navbarToggleExternalContent">
             <div class="bg-dark p-4">
@@ -37,10 +37,10 @@
                                     <a class="nav-link" href="TraCuu.aspx">Tra Cứu</a>
                                 </li>
                             </ul>
-                            <form class="d-flex" role="search">
+                            <div class="d-flex" role="search">
                                 <button style="margin: 0px 10px;" class="btn btn-outline-success" type="submit">Login</button>
                                 <button class="btn btn-outline-success" type="submit">Sign Up</button>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -53,11 +53,12 @@
                 </button>
             </div>
         </nav>
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+           <div class="container"> <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
             </asp:ContentPlaceHolder>
-        </div>
 
+           </div>
+        <div class="d-flex align-items-start">
+</div>
         <%-- Footer --%>
         <div class="card-footer text-muted text-bg-secondary p-3 text-center" style="width: 100%; margin-top: 50px;">
             Không có hàng đâu mà mua

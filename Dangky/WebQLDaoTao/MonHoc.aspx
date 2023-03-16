@@ -4,7 +4,7 @@
     <div class="container">
         <asp:GridView runat="server" ID="gvMonHoc" AutoGenerateColumns="false" OnRowEditing="gvMonHoc_RowEditing" DataKeyNames="MaMH">
             <Columns>
-                <asp:BoundField HeaderText="Mã Môn Học" DataField="MaMH"/>
+                <asp:BoundField HeaderText="Mã Môn Học" DataField="MaMH" ReadOnly="true"/>
                 <asp:BoundField HeaderText="Tên Môn Học" DataField="TenMH"/>
                 <asp:BoundField HeaderText="Số Tiết" DataField="SoTiet"/>
                 <asp:TemplateField>

@@ -3,3 +3,45 @@
     margin: 0px;
     box-sizing: border-box;
 }
+.item {
+   width: 80%;
+   margin: auto 50px 0px;
+}
+.item .img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #dddddd;
+}
+.item .img img {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin-top: 20px;
+   
+}
+.item .img img:hover {
+    transform: scale(1.2);
+}
+.item .item-grid {
+   float: left;
+   text-align: center;
+   margin-top: 40px;
+   padding: 0px 20px;
+}
+
+.card-footer {
+    float: left;
+}
+
+@media (max-width: 750px) {
+    .item .item-grid {       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -58px;
+    }
+    .dshoaclick {
+        float: right;
+    }
+       
+} 
