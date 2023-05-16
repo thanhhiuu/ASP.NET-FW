@@ -84,6 +84,7 @@
     <Content Include="css\bootstrap.rtl.css" />
     <Content Include="css\bootstrap.rtl.min.css" />
     <Content Include="css\index.css" />
+    <Content Include="GioHang.aspx" />
     <Content Include="Global.asax" />
     <Content Include="image\1.png" />
     <Content Include="image\2.png" />
@@ -112,6 +113,13 @@
     <Content Include="XemHoa.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GioHang.aspx.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GioHang.aspx.designer.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -122,6 +130,8 @@
     <Compile Include="LatOut.Master.designer.cs">
       <DependentUpon>LatOut.Master</DependentUpon>
     </Compile>
+    <Compile Include="Models\Cart.cs" />
+    <Compile Include="Models\CartItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThemHoa.aspx.cs">
       <DependentUpon>ThemHoa.aspx</DependentUpon>
@@ -180,7 +190,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

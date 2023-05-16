@@ -1,0 +1,126 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.80);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: rgba(10, 10, 10, .45);
+    width: 100%;
+    max-width: 470px;
+    padding: 30px 20px;
+    border-radius: 30px;
+}
+
+    .container form {
+        padding: 0px 30px;
+    }
+
+    .container h1 {
+        font-size: 40px;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+form .main {
+    position: relative;
+    margin: 25px 0;
+    border-bottom: 2px solid #dddddd
+}
+
+.main .input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    margin-bottom: -10px;
+    /* background-color: antiquewhite; */
+}
+
+.main label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transform: all .40s ease;
+    margin: 7px 0;
+    font-size: 18px;
+    color: #dddddd;
+}
+
+.main span::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 0;
+}
+
+.main .input:focus ~ label,
+.main .input:valid ~ label {
+    top: -10px;
+    color: #fff;
+}
+
+.pass {
+    padding: 10px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+    .pass a {
+        color: #dddddd;
+    }
+
+.input {
+    padding: 10px 0;
+    margin: 20px 0;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+}
+
+.sign_up {
+    color: #fff;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+
+    .sign_up a {
+        width: 100%;
+        margin-left: 10px;
+        color: #dddddd;
+    }
+
+        .sign_up a:hover {
+            transform: scale(1.2);
+        }
+
+@media (max-width: 525px) {
+    body {
+        padding: 0 2%;
+    }
+
+    .container {
+        padding: 10px 20px;
+    }
+}

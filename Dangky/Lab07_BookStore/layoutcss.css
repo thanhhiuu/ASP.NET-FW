@@ -1,0 +1,127 @@
+﻿body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+font-size: 15px;
+}
+
+.xemsach {
+width: 100%;
+margin: 0 auto;
+padding: 5px;
+height: 100px;
+position: relative;
+min-height: 10px;
+}
+
+.menu {
+position: absolute;
+width: 20%;
+top: 0;
+left: 0;
+color: #3a3838;
+border: 1px solid #9e9b9b;
+border-bottom: none;
+min-height: 10px;
+}
+
+.menu a {
+text-decoration: none;
+color: black;
+}
+
+#tieude {
+width: 100%;
+text-align: center;
+height: 40px;
+padding-top: 10px;
+background-color: #007AFF;
+}
+
+.content {
+position: absolute;
+width: 75%;
+height: 100px;
+top: 0;
+right: 0;
+}
+
+.btn-light {
+color: black;
+height: 40px;
+text-align: center;
+padding-top: 10px;
+background-color: aliceblue;
+border-bottom: 1px solid #9e9b9b;
+}
+
+
+.btn-light:hover {
+background-color: #9e9b9b;
+}
+
+#thongbao {
+width: 100%;
+height: 40px;
+padding: 10px;
+background-color: #D3ECF1;
+}
+
+.data_items {
+width: 100%;
+padding: 5px;
+}
+
+.data_items .item {
+float: left;
+width: 23%;
+margin: 5px;
+text-align: center;
+}
+
+.data_items .item .i {
+border: 1px solid black;
+height: 200px;
+padding: 10px;
+}
+
+.data_items .item .i img {
+width: 150px;
+height: 150px;
+transform: rotate(1);
+transition-duration: 0.3s;
+}
+
+.data_items .item:hover .i img {
+transform: scale(1.1);
+}
+
+
+.data_items .item .t {
+border: 1px solid black;
+border-top: none;
+padding: 5px;
+height: 150px;
+}
+#datmua {
+    margin-top: 5px;
+    height: 35px;
+    width:100%;
+}
+
+#tensach {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 85px;
+}
+
+#gia {
+    margin-bottom: 5px;
+    width: 100%;
+    height: 20px;
+}
+.data_items .item .t .vn {
+color: red;
+}

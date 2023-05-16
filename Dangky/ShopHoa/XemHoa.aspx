@@ -24,7 +24,7 @@
                             Giá Bán:
                             <asp:Label CssClass="text-info" runat="server" ID="lbGia" Text='<%# Eval("Gia", "{0: #,##0} vnđ") %>'></asp:Label>
                             <br />
-                            <a class="btn btn-success">Buy</a>
+                            <asp:Button runat="server" CssClass="btn btn-success" Text="Thêm vào giỏ" />
                         </div>
                     </div>
                 </div>

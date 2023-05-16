@@ -13,28 +13,31 @@
             width: 100%;
             height: 100vh;
         }
+
         .content-sub-left {
             flex-basis: 15%;
             background-color: #dddddd;
         }
-        .content-sub-left ul li {
-             list-style: none; 
-             border-bottom: 1px solid #000; 
-             padding: 10px 0px;
-             margin-left:0px;
-        }
-        .content-sub-left ul li a{
-            color: #000;
-            font-size: 18px;
-            text-decoration: none;
-            
-        }
-        .content-sub-left ul li a:hover {
-           color:aqua;
-        }
+
+            .content-sub-left ul li {
+                list-style: none;
+                border-bottom: 1px solid #000;
+                padding: 10px 0px;
+                margin-left: 0px;
+            }
+
+                .content-sub-left ul li a {
+                    color: #000;
+                    font-size: 18px;
+                    text-decoration: none;
+                }
+
+                    .content-sub-left ul li a:hover {
+                        color: aqua;
+                    }
+
         .content-sub-right {
             flex-basis: 85%;
-            
         }
     </style>
 </head>
@@ -52,27 +55,33 @@
             <li class="nav-item">
                 <a class="nav-link disabled">Quản Lý Điểm Thi</a>
             </li>
+            <ul class="nav" style="display: flex; align-items: center; text-align: left; justify-content: center;">
+                <li><a href="DoiMatKhau.aspx" title="Thay đổi mật khẩu">
+                    <asp:Label ID="lbUserName" runat="server"
+                        Text=""></asp:Label></a> </li>
+                <li><a href="DangXuat.aspx">Đăng xuất</a></li>
+            </ul>
         </ul>
 
-  <div class="content-sub">
-    <div class="content-sub-left">
-        <h4 style="background-color:cadetblue;">Chức Năng Chính</h4>
-        <ul>
-            <li><a href="#">Quản Lý Môn Học</a></li>
-            <li><a href="#">Quản Lý Khoa</a></li>
-            <li><a href="#">Quản Lý Sinh Viên</a></li>
-            <li><a href="#">Quản Lý Điểm</a></li>
-        </ul>
-    </div>
-    <div class="content-sub-right container">
-        <asp:ContentPlaceHolder runat="server" ID="NoiDung">
-        </asp:ContentPlaceHolder>
-    </div>
-  </div>
+        <div class="content-sub">
+            <div class="content-sub-left">
+                <h4 style="background-color: cadetblue;">Chức Năng Chính</h4>
+                <ul>
+                    <li><a href="MonHoc.aspx">Quản Lý Môn Học</a></li>
+                    <li><a href="Khoa.aspx">Quản Lý Khoa</a></li>
+                    <li><a href="#">Quản Lý Sinh Viên</a></li>
+                    <li><a href="#">Quản Lý Điểm</a></li>
+                </ul>
+            </div>
+            <div class="content-sub-right container">
+                <asp:ContentPlaceHolder runat="server" ID="NoiDung">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
     </form>
 
 
-    
+
     <!-- Link tới các tệp JavaScript của Bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
